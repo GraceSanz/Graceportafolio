@@ -1,20 +1,20 @@
 var botonEncriptar = document.querySelector(".btn-encriptar");
 var botondesencriptar = document.querySelector(".btn-desencriptar");
-var munieco = document.querySelector("contenedormuneco");
+var munieco = document.querySelector(".contenedormuneco");
 var contenedor = document.querySelector(".contenedor-parrafo");
-var resultado = document.querySelector("contenedor-resultado");
+var resultado = document.querySelector(".contenedor-resultado");
 
 botonEncriptar.onclik = encriptar;
 botonDesencriptar.onclik = desencriptar;
 function encriptar(){
     ocultarAdelante();
     var cajaTexto = recuperartexto()
-    resultado.textContent = encriptarTexto(cajaTexto)
+    resultado.textContent = encriptarTexto(cajaTexto);
 }
 function desencriptar(){
     ocultarAdelante();
     var cajaTexto = recuperartexto()
-    resultado.textContent = desencriptarTexto(cajaTexto)
+    resultado.textContent = desencriptarTexto(cajaTexto);
 }
 function recuperartexto(){
     var cajaTexto = document.querySelector(".cajaTexto")
