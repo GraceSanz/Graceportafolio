@@ -1,24 +1,25 @@
 var botonEncriptar = document.querySelector(".btn-encriptar");
 var botondesencriptar = document.querySelector(".btn-desencriptar");
-var munieco = document.querySelector(".contenedormuneco");
+var munieco = document.querySelector(".contenedormunieco");
 var contenedor = document.querySelector(".contenedor-parrafo");
 var resultado = document.querySelector(".contenedor-resultado");
 
 botonEncriptar.onclik = encriptar;
 botonDesencriptar.onclik = desencriptar;
+
 function encriptar(){
     ocultarAdelante();
-    var cajaTexto = recuperartexto()
-    resultado.textContent = encriptarTexto(cajaTexto);
+    var cajatexto = recuperartexto()
+    resultado.textContent = encriptarTexto(cajatexto);
 }
 function desencriptar(){
     ocultarAdelante();
-    var cajaTexto = recuperartexto()
-    resultado.textContent = desencriptarTexto(cajaTexto);
+    var cajaTexto = recuperarTexto()
+    resultado.textContent = desencriptarTexto(cajatexto);
 }
-function recuperartexto(){
-    var cajaTexto = document.querySelector(".cajaTexto")
-    return cajaTexto.value
+function recuperarTexto(){
+    var cajaTexto = document.querySelector(".cajatexto")
+    return cajatexto.value
 }
 function ocultarAdelante (){
     munieco.classList.add("ocultar");
