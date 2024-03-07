@@ -7,12 +7,12 @@ var resultado = document.querySelector("contenedor-resultado");
 botonEncriptar.onclik = encriptar;
 botonDesencriptar.onclik = desencriptar;
 function encriptar(){
-    ocultar.Adelante();
+    ocultarAdelante();
     var cajaTexto = recuperartexto()
     resultado.textContent = encriptarTexto(cajaTexto)
 }
 function desencriptar(){
-    ocultar.Adelante();
+    ocultarAdelante();
     var cajaTexto = recuperartexto()
     resultado.textContent = desencriptarTexto(cajaTexto)
 }
