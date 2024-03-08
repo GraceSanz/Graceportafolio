@@ -1,5 +1,5 @@
 var botonEncriptar = document.querySelector(".btn-encriptar");
-var botondesencriptar = document.querySelector(".btn-desencriptar");
+var botonDesencriptar = document.querySelector(".btn-desencriptar");
 var munieco = document.querySelector(".contenedormunieco");
 var contenedor = document.querySelector(".contenedor-parrafo");
 var resultado = document.querySelector(".contenedor-resultado");
